@@ -1,0 +1,461 @@
+/* style.css - النسخة المصححة */
+
+/* تنسيق عام لكل الصفحات */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f5dc; /* لون بيج */
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* تنسيق الهيدر */
+header {
+    background-color: #8b0000; /* لون خمري */
+    color: white !important; /* التأكيد على اللون الأبيض */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: white !important; /* التأكيد على اللون الأبيض */
+}
+
+header a {
+    display: inline-block;
+    background-color: white;
+    color: #8b0000 !important; /* التأكيد على اللون الأحمر الداكن */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+header a:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+/* تنسيق قسم التنقل في الصفحة الرئيسية */
+nav {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+nav a {
+    display: block;
+    color: #8b0000 !important; /* التأكيد على اللون */
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #b22222 !important;
+    padding-left: 15px;
+    background-color: #fffafa;
+}
+
+nav a:last-child {
+    border-bottom: none;
+}
+
+/* تنسيق الفقرات والعناوين */
+p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    text-align: justify;
+    line-height: 1.8;
+    color: #333 !important; /* التأكيد على اللون */
+}
+
+h1 {
+    color: #8b0000 !important; /* التأكيد على اللون */
+    font-size: 1.8rem;
+    margin: 25px 0 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e6d3d3;
+}
+
+h2 {
+    color: #a52a2a !important; /* التأكيد على اللون */
+    font-size: 1.5rem;
+    margin: 20px 0 10px;
+}
+
+h3 {
+    color: #8b0000 !important; /* التأكيد على اللون */
+    font-size: 1.3rem;
+    margin: 15px 0;
+}
+
+/* تنسيق النصوص العريضة */
+p[style*="font-weight: bold"],
+.font-bold {
+    font-weight: bold !important;
+    color: #8b0000 !important; /* التأكيد على اللون */
+}
+
+/* تنسيق القوائم */
+ul, ol {
+    margin: 20px 0;
+    padding-left: 30px;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #333 !important; /* التأكيد على اللون */
+}
+
+/* تنسيق الحاويات والأعمدة للقصائد */
+.container {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 25px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #8b0000;
+    overflow: auto; /* لإصلاح مشكلة float */
+}
+
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: right; /* لجعل العمود الأول على اليمين */
+    width: 48%;
+    font-size: 1.2rem;
+    line-height: 2;
+    text-align: center;
+    padding: 15px;
+    background-color: #fffafa;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+/* إذا كان هناك عمود ثاني، نضعه على اليسار */
+.column:first-child {
+    float: right;
+    margin-left: 2%;
+    margin-right: 0;
+}
+
+.column:last-child {
+    float: left;
+    margin-left: 0;
+    margin-right: 2%;
+}
+
+.container p {
+    font-size: 1.3rem;
+    color: #8b0000 !important; /* التأكيد على اللون */
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+    clear: both;
+    display: block;
+}
+
+/* تنسيق الأقسام */
+section {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 25px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    color: #333 !important; /* التأكيد على اللون */
+}
+
+
+
+footer {
+    background-color: #8b0000;
+    color: white !important;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 40px;
+    text-align: center;
+    clear: both;
+}
+
+footer h1, footer h2, footer h3 {
+    color: white !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+footer p {
+    color: #f0f0f0 !important;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* تنسيق الروابط في الفوتر */
+footer a {
+    color: #ffcccb !important;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: white !important;
+    text-decoration: underline;
+}
+
+/* تنسيق قائمة الفريق */
+footer ol, footer ul {
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+footer ol li, footer ul li {
+    color: #f0f0f0 !important;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    text-align: center;
+    display: block;
+}
+
+/* تنسيق خاص للنص الإنجليزي */
+footer .english-text {
+    font-family: 'Arial', sans-serif;
+    direction: ltr;
+    text-align: center;
+    margin: 15px 0;
+}
+
+/* تنسيق حقوق النشر */
+footer .copyright {
+    font-size: 1rem;
+    color: #ffcccb !important;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* تنسيق قسم المراجع */
+footer section {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+footer section a {
+    color: #ffcccb !important;
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* تحسين تنسيق النص العربي في الفوتر */
+footer .arabic-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin: 15px 0;
+}
+/* تنسيق الأسطر الفاصلة */
+hr {
+    border: none;
+    height: 2px;
+    background-color: #e6d3d3;
+    margin: 30px 0;
+    clear: both;
+}
+
+/* تنسيق للهواتف المحمولة */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+    
+    .column {
+        float: none !important;
+        width: 100% !important;
+        margin: 0 0 15px 0 !important;
+    }
+    
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    h1 {
+        font-size: 1.6rem;
+    }
+    
+    nav a {
+        font-size: 1.1rem;
+        padding: 10px 0;
+    }
+    
+    .container, section {
+        padding: 20px;
+    }
+}
+
+/* تحسين المظهر العام */
+br {
+    margin-bottom: 10px;
+}
+
+/* تنسيق خاص للصفحة الرئيسية */
+body > h1:first-child {
+    text-align: center;
+    color: #8b0000 !important;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+/* إضافة بعض المؤثرات البسيطة */
+.container:hover, section:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease;
+}
+
+/* تنسيق الروابط بشكل عام */
+a {
+    color: #8b0000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #b22222;
+    text-decoration: underline;
+}
+
+/* تنسيق النصوص في body مباشرة */
+body > p,
+body > div,
+body > section {
+    color: #333 !important;
+}
+
+/* التأكد من أن جميع النصوص في body مرئية */
+body *:not(header):not(footer):not(header *):not(footer *) {
+    color: #333 !important;
+}
+
+/* استثناء خاص للعناوين */
+body h1:not(header h1):not(footer h1),
+body h2:not(header h2):not(footer h2),
+body h3:not(header h3):not(footer h3) {
+    color: #8b0000 !important;
+}
+
+
+.video-section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 25px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #8b0000;
+    text-align: center;
+}
+
+.video-section h2 {
+    color: #8b0000;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e6d3d3;
+}
+
+.video-section p {
+    color: #333;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* حاوية الفيديو */
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #000;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* نسبة العرض إلى الارتفاع 16:9 */
+.video-container::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%; /* 16:9 نسبة الارتفاع */
+}
+
+.video-container iframe,
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* تنسيق الفيديو المحلي */
+.video-container video {
+    background-color: #000;
+    display: block;
+}
+
+/* تنسيق للهواتف المحمولة */
+@media (max-width: 768px) {
+    .video-section {
+        padding: 20px;
+    }
+    
+    .video-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .video-section p {
+        font-size: 1rem;
+    }
+}
+
+/* تأثيرات تفاعلية */
+.video-container:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
