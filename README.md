@@ -1,2 +1,2 @@
-[yazanamro11](https://github.com/yazanamr11/yazanamro11.github.io/tree/main)
+# yazanamro11.github.io
 مجلة رقمية بعنوان (عناقيد شعرية)
